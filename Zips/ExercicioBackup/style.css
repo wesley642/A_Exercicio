@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.18);
+    height: 80px;
+}
+
+.logo{
+    display:inline-block;
+}
+
+.ImgLogo{
+    width: 48%;
+}
+
+.nav{
+    display: flex;
+    gap: 1.4rem;
+}
+
+.navItem{
+    font-family:"Montserrat", Sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.nav li:hover{
+    color: blue;
+}
+
+.socialMedia a i {
+    display: inline-block;
+    width: 24px; /* Tamanho do ícone */
+    height: 24px; /* Tamanho do ícone */
+}
+
+.FaceIcon:hover{
+    color: blue;
+}
+
+.FaceIcon{
+    margin: 5px 5px;
+}
+
+.InstaIcon{
+    margin: 5px 5px;
+    font-weight: bolder;
+    font-size: 17px;
+} 
+
+a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+
+.navItem a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform:scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navItem a:hover{
+    color: blue;
+}
+
+.navItem a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left ;
+}
