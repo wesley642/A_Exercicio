@@ -123,6 +123,36 @@ a{
     background-color: black;
 }
 
+.arrowIcon{
+    padding-left: 2px;
+}
+
+.dropdown-content{
+   display: none; 
+   position: absolute;
+   background-color: #a5a5a5;
+   min-width: 160px;
+   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   border: 5px;
+}
+
+.dropdown-content a{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: red;
+}
+
+.show{
+    display: block;
+}
 
 
 
